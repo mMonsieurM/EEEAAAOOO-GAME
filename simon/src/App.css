@@ -1,12 +1,14 @@
 *{
+  --dark: #282C34;
   --black: #496EB2;
   --green: #73BE31;
   --yellow: #F5CC32;
   --pink: #E14A70;
   --pink--light: #FEB7FF;
-  --blue: #ACF5FF;
+  --blue: #54D4BF;
   --orange: #F66F38;
   --purple: #654075;
+  --white: #FFFFFF;
 
 }
 .header{
@@ -16,36 +18,33 @@
 }
 
 button{
-  background: #26F9EA 0% 0% no-repeat padding-box;
-  border: 1px solid white ;
-  border-radius: 8px;
+ 
   height: 45px;
   margin-top: 30px;
   width: 300px;
-  color: black;
-  
-  backdrop-filter: blur(30px);
   
   backdrop-filter: brightness(50%);
   backdrop-filter: opacity(10%);
-  
   text-align: center;
   vertical-align: middle;
   justify-content: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
-  
+  font-size: 20px;
   cursor: pointer;
-  background: rgba( 38, 249, 234, 0.15 );
-  /*box-shadow: 0 0px 40px 0 rgba( 255, 255, 255, 0.10 );*/
-  backdrop-filter: blur( 5.0px );
-  -webkit-backdrop-filter: blur( 5.0px );
-  border-radius: 8px;
-  border: 1px solid white;
-  color: white;
   outline: none;
   transition: all 0.4s ease;
+  background: rgba( 255, 255, 255, 0.60 );
+  box-shadow: 0 0px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+button:hover{
+  transform: scale(1.10);
+  box-shadow: 0 0px 32px 5px rgba(255, 255, 255, 0.50);
 }
 
 
@@ -56,15 +55,20 @@ button{
   font-size: calc(10px + 2vmin);
   color: white;
   font-size: calc(20px + 2vmin);
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .game{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 50px;
   justify-content: center;
 
+}
+.row{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
 }
 
 .gamebutton {
@@ -73,7 +77,6 @@ button{
   margin: 25px;
   border-radius: 500px;
   border : 10px solid; 
-
 }
 
 .cover{
@@ -81,8 +84,17 @@ button{
   height: 100px;
 }
 
+/*Color*/ 
 #blue {
   border-color: var(--blue);
+}
+
+#purple {
+  border-color: var(--purple);
+}
+
+#orange {
+  border-color: var(--orange);
 }
 
 #green {
@@ -93,11 +105,43 @@ button{
   border-color: var(--yellow);
   
 }
-
-
+#pink-light{
+  border-color: var(--pink--light);
+}
 
 #pink {
   border-color: var(--pink);
+}
+
+#black {
+  border-color: var(--black);
+}
+
+#white {
+  border-color: var(--white);
+}
+
+/*Hover*/ 
+
+#black:hover {
+  background-color: var(--black);
+}
+
+#white:hover {
+  background-color: var(--white);
+}
+
+
+#purple:hover {
+  background-color: var(--purple);
+}
+
+#orange:hover {
+  background-color: var(--orange);
+}
+
+#pink-light:hover{
+  background-color: var(--pink--light);
 }
 
 #blue:hover {
@@ -115,6 +159,8 @@ button{
 #pink:hover {
   background-color: var(--pink);
 }
+
+/*General*/ 
 
 .App-logo {
   height: 40vmin;
